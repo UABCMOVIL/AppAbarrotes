@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" prefHeight="150.0" style="-fx-border-width: 5; -fx-border-color: #8BC34A;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="35.0" prefWidth="475.0">
+         <children>
+            <Label text="Producto">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="producto" text="Label" translateX="125.0" translateY="5.0">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="475.0">
+         <children>
+            <Label text="Cantidad">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="cantidad" text="Label" translateX="125.0" translateY="10.0">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="475.0">
+         <children>
+            <Label text="Precio">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="precio" text="Label" translateX="152.0" translateY="10.0">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="475.0">
+         <children>
+            <Label text="Codigo">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="codigo" text="Label" translateX="142.0" translateY="10.0">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="lblCancelado" prefHeight="40.0" prefWidth="327.0" rotate="-19.0" scaleX="2.0" scaleY="2.0" text="CANCELADO" textFill="RED" translateX="200.0" translateY="-145.0" visible="false">
+         <font>
+            <Font name="Segoe UI Light Italic" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
