@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AltasProductosDlgController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #349946;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Altas De Productos" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="57.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="exitBtnNewUser" fitHeight="70.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true" translateX="60.0">
+                     <image>
+                        <Image url="@../Images/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="236.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="31.0" layoutY="26.0" text="Codigo">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="100.0" text="Nombre">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="agregarBtn" alignment="CENTER" layoutX="300.0" layoutY="130.0" prefHeight="51.0" prefWidth="200.0" style="-fx-background-color: #349946;" text="Agregar" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="38.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="31.0" layoutY="181.0" text="Precio">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPrecio" layoutX="115.0" layoutY="188.0" />
+                  <Label layoutX="31.0" layoutY="250.0" text="Cantidad">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCantidad" layoutX="125.0" layoutY="257.0" prefHeight="16.0" prefWidth="116.0" />
+                  <ComboBox fx:id="txtCodigo" layoutX="125.0" layoutY="33.0" prefWidth="150.0" />
+                  <TextField fx:id="txtNombre" layoutX="125.0" layoutY="107.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

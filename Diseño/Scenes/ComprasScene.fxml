@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ComprasSceneController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0">
+         <top>
+            <HBox fx:id="menuHBox" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #349946;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnProductos" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: # 349946;" text="Principal" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCompras" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #349946;" text="Productos" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="initSesionBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Iniciar Sesion" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="1366.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="mainMenuAnchorPanel" prefHeight="668.0" prefWidth="340.0" style="-fx-background-color: #ffffff; -fx-border-color: #349946; -fx-border-radius: 2; -fx-border-width: 5;">
+                     <children>
+                        <Label layoutX="76.0" layoutY="68.0" text="Buscar Producto">
+                           <font>
+                              <Font name="Segoe UI Light" size="31.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="173.0" text="Codigo">
+                           <font>
+                              <Font name="Segoe UI Light" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblNombre" layoutX="14.0" layoutY="277.0" text="Nombre" visible="false">
+                           <font>
+                              <Font name="Segoe UI Light" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txtNombre" layoutX="140.0" layoutY="285.0" text="Label" visible="false" />
+                        <Label fx:id="lblPrecio" layoutX="14.0" layoutY="347.0" text="Precio" visible="false">
+                           <font>
+                              <Font name="Segoe UI Light" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txtPrecio" layoutX="140.0" layoutY="355.0" text="Label" visible="false" />
+                        <Label fx:id="lblCantidad" layoutX="123.0" layoutY="483.0" text="Cantidad" visible="false">
+                           <font>
+                              <Font name="Segoe UI Light" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtCantidad" layoutX="109.0" layoutY="535.0" visible="false" />
+                        <Label fx:id="lblStock" layoutX="14.0" layoutY="423.0" text="Stock" visible="false">
+                           <font>
+                              <Font name="Segoe UI Light" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txtStock" layoutX="140.0" layoutY="431.0" text="Label" visible="false" />
+                        <ChoiceBox fx:id="txtCodigo" layoutX="148.0" layoutY="182.0" prefWidth="150.0" />
+                        <JFXButton fx:id="btnAgregar" layoutX="130.0" layoutY="585.0" text="Agregar" textFill="#27d03a" visible="false">
+                           <font>
+                              <Font name="Segoe UI Light" size="27.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane fx:id="facturasPane" prefWidth="1026.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="75.0" layoutY="18.0" text="Lista De Compras">
+                           <font>
+                              <Font name="Segoe UI Light" size="67.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="58.0" layoutY="117.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white;">
+                           <content>
+                              <VBox fx:id="lista" style="-fx-background-color: white;" />
+                           </content>
+                        </ScrollPane>
+                        <JFXButton fx:id="btnFacturar" layoutX="583.0" layoutY="280.0" text="Facturar" textFill="#21b93d">
+                           <font>
+                              <Font name="Segoe UI Light" size="74.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

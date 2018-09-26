@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="RootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProductosSceneController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0">
+         <top>
+            <HBox fx:id="menuHBox" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #349946;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnPrincipal" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: # 349946;" text="Principal" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCompras" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #349946;" text="Compras" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="SesionBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" text="Cerrar Sesion" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: white;">
+                     <children>
+                        <JFXButton fx:id="altasBtn" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #536DFE;" text="Altas" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Light" size="45.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bajasBtn" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #536DFE;" text="Bajas" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Light" size="45.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <AnchorPane fx:id="CenterPanel" prefHeight="668.0" prefWidth="1115.0" style="-fx-background-color: #ffffff;" />
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
