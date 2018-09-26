@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="newUserRootPaneButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewUserDlgController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #349946;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Nuevo Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="57.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="exitBtnNewUser" fitHeight="70.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true" translateX="150.0">
+                     <image>
+                        <Image url="@../Images/exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="236.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="114.0" layoutY="14.0" text="Email">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="92.0" text="Contraseña">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtPassNewUser" layoutX="90.0" layoutY="130.0" />
+                  <TextField fx:id="txtNewUsuarioEmail" layoutX="90.0" layoutY="56.0" />
+                  <JFXButton fx:id="newUserBtn" alignment="CENTER" layoutX="362.0" layoutY="196.0" prefHeight="51.0" prefWidth="200.0" style="-fx-background-color: #349946;" text="Crear" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="38.0" />
+                     </font>
+                  </JFXButton>
+                  <ChoiceBox fx:id="rolChoiceBox" layoutX="74.0" layoutY="434.0" prefWidth="150.0" />
+                  <Label layoutX="125.0" layoutY="387.0" text="Rol">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="114.0" layoutY="167.0" text="Nombre">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombreNewUser" layoutX="90.0" layoutY="209.0" />
+                  <Label layoutX="114.0" layoutY="273.0" text="Apellido">
+                     <font>
+                        <Font name="Segoe UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtApellidoNewUser" layoutX="90.0" layoutY="315.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
